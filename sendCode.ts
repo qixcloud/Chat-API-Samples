@@ -1,5 +1,5 @@
 {
-  const userPhone:string = '[phone]';
+  const userPhone:string = '[phone (+12345678...)]';
 
   fetch('https://api.qix.cloud/sendCode', {
     method: 'POST',

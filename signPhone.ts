@@ -1,5 +1,5 @@
 {
-  const userPhone:string = '[phone]';
+  const userPhone:string = '[phone (+12345678...)]';
   const appId:string = '[app-id]';
   const code:number = 1234;
 
