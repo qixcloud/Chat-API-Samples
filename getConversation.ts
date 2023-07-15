@@ -60,8 +60,6 @@
     name: string,
     details: string,
     eventTimestamp: number,
-    eventDate: string,
-    eventTime: string,
     eventType: string,
     members: string[],
     location: string,
