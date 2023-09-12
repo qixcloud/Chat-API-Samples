@@ -18,6 +18,10 @@
       party: [],  // list of party info
       tags: [],   // list of tags
       events: [], // list of events
+      advanced: {
+        fileVineProjectIds: [], // list of ids (strings)
+        caseFileIds: [], // list of ids (strings)
+      }
     }),
     headers: {
       'Content-Type': 'application/json',

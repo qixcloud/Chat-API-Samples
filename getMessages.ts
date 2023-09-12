@@ -1,13 +1,14 @@
 {
   interface IMessage {
-    id: string,             // message id
-    text: string,           // message text
-    date: number,           // message timestamp
-    author: string,         // message author id
-    authorLabel: string,    // message author label
-    attachment: string,     // message attachment link
-    source: string,         // message source (app, SMS...)
-    twilioStatus?: string,  // status of twilio (delivered, unsent...)
+    id: string,                   // message id
+    text: string,                 // message text
+    date: number,                 // message timestamp
+    author: string,               // message author id
+    authorLabel: string,          // message author label
+    attachment: string,           // message attachment link
+    attachmentMimeType?: string   // message attachment mime type
+    source: string,               // message source (app, SMS...)
+    twilioStatus?: string,        // status of twilio (delivered, unsent...)
   }
 
   const jwtToken:string = '[token]';

@@ -23,13 +23,15 @@
     lastActivity: number    // timesatmp of the last activity in the conversation
     members: {              // list of conversation members
       [key:string]: IConversationMember
+    },
+    advanced: {
+      fileVineProjectIds?: string[], // list of ProjectIds
+      caseFileIds?: string[], // list of caseFileIds
     }
   }
 
   interface IConversationMember {
     id: string,             // member id
-    label: string,          // member label
-    img: string,            // member img
     status: string,         // member status (read, unread, replied, assigned...)
     newMessages: number,    // new messages amount
     role: string            // role of the member (client, creator, team)
