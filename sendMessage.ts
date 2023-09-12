@@ -14,8 +14,8 @@
   const jwtToken:string = '[token]';
   const chatId:string = '[chat-id]';
   const newMessage:string = 'Hello!'
-  const attachment:string = 'base64 of a file';
-  const attachmentMimeType:string = 'mime type of a file (e.g.: image/png)';
+  const attachment:string = 'base64 of a file'; // https://stackoverflow.com/questions/36280818/how-to-convert-file-to-base64-in-javascript
+  const attachmentMimeType:string = 'mime type of a file (e.g. image/png)';
 
   fetch('https://api.qix.cloud/message', {
     method: 'POST',
