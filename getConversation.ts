@@ -11,6 +11,7 @@
     phone?: string,         // client full phone
     email?: string,         // client email
     birthday?: string,      // client birthday
+    device?: string,        // client device (Android)
     accountStatus?: string, // client account status
     tags: ITag[],           // list of tags
     cases: ICaseMatter[],   // list of case matters

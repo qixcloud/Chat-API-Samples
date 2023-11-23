@@ -1,9 +1,6 @@
 {
   const jwtToken:string = '[token]';
 
-  // !!!
-  // do not send empty fields, all fields below must be filled!
-
   fetch('https://api.qix.cloud/conversation', {
     method: 'PUT',
     body: JSON.stringify({
@@ -13,6 +10,7 @@
       phone: '[phone]',
       email: '[email]',
       birthday: '[birthday]',
+      device: '[device]',
       accountStatus: '[account status]',
       cases: [],  // list of case matters
       party: [],  // list of party info
