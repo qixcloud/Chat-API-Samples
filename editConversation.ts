@@ -11,6 +11,7 @@
       email: '[email]',
       birthday: '[birthday]',
       device: '[device]',
+      intake_complete: 'true or false',
       accountStatus: '[account status]',
       cases: [],  // list of case matters
       party: [],  // list of party info

@@ -2,27 +2,28 @@
   // interfaces
 
   interface IConversation {
-    id: string,             // conversation id
-    appId: string,          // app id
-    chatType: string,       // type of the conversation
-    chatStatus: string,     // status of the conversation (active, archived, new...)
-    language?: string,      // conversation language
-    fullName?: string,      // client full name
-    phone?: string,         // client full phone
-    email?: string,         // client email
-    birthday?: string,      // client birthday
-    device?: string,        // client device (Android)
-    accountStatus?: string, // client account status
-    tags: ITag[],           // list of tags
-    cases: ICaseMatter[],   // list of case matters
-    party: IPartyInfo[],    // list of party info
-    events: IEvent[],       // list of events
+    id: string,               // conversation id
+    appId: string,            // app id
+    chatType: string,         // type of the conversation
+    chatStatus: string,       // status of the conversation (active, archived, new...)
+    language?: string,        // conversation language
+    fullName?: string,        // client full name
+    phone?: string,           // client full phone
+    email?: string,           // client email
+    birthday?: string,        // client birthday
+    device?: string,          // client device (Android)
+    intake_complete?: boolean
+    accountStatus?: string,   // client account status
+    tags: ITag[],             // list of tags
+    cases: ICaseMatter[],     // list of case matters
+    party: IPartyInfo[],      // list of party info
+    events: IEvent[],         // list of events
     lastMessage: {          
-      text: string,         // last message text
-      author: string,       // last message author id
+      text: string,           // last message text
+      author: string,         // last message author id
     },
-    lastActivity: number    // timesatmp of the last activity in the conversation
-    members: {              // list of conversation members
+    lastActivity: number      // timesatmp of the last activity in the conversation
+    members: {                // list of conversation members
       [key:string]: IConversationMember
     },
     advanced: {
