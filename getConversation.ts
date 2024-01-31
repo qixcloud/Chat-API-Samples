@@ -14,6 +14,7 @@
     device?: string,          // client device (Android)
     intake_complete?: boolean
     accountStatus?: string,   // client account status
+    noteids?: string[],       
     tags: ITag[],             // list of tags
     cases: ICaseMatter[],     // list of case matters
     party: IPartyInfo[],      // list of party info

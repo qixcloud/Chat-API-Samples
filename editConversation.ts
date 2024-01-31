@@ -17,6 +17,7 @@
       party: [],  // list of party info
       tags: [],   // list of tags
       events: [], // list of events
+      noteids: [],// list of noteids
       advanced: {
         fileVineProjectIds: [], // list of ids (strings)
         caseFileIds: [], // list of ids (strings)
