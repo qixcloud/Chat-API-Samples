@@ -9,6 +9,8 @@
     attachmentMimeType?: string   // message attachment mime type
     source: string,               // message source (app, SMS...)
     twilioStatus?: string,        // status of twilio (delivered, unsent...)
+    noteId?: string               // FileVine
+    projectId?: string            // FileVine
   }
 
   const jwtToken:string = '[token]';

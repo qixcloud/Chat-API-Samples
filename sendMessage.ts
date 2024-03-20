@@ -9,6 +9,8 @@
     attachmentMimeType?: string   // message attachment mime type
     source: string,               // message source (app, SMS...)
     twilioStatus?: string,        // status of twilio (delivered, unsent...)
+    noteId?: string,              // FileVine
+    projectId?: string,           // FileVine
   }
 
   const jwtToken:string = '[token]';
@@ -16,6 +18,8 @@
   const newMessage:string = 'Hello!'
   const attachment:string = 'base64 of a file'; // https://stackoverflow.com/questions/36280818/how-to-convert-file-to-base64-in-javascript
   const attachmentMimeType:string = 'mime type of a file (e.g. image/png)';
+  const noteId:string = '123';
+  const projectId:string = '123';
 
   fetch('https://api.qix.cloud/message', {
     method: 'POST',
@@ -24,6 +28,8 @@
       message: newMessage,
       attachment: attachment,
       attachmentMimeType: attachmentMimeType,
+      noteId: noteId,
+      projectId: projectId
     }),
     headers: {
       'Content-Type': 'application/json',
