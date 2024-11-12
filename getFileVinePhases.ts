@@ -5,6 +5,7 @@
     description: string,
     order: number,
     fileVineId: string,
+    type?: string,
   }
 
   const jwtToken:string = '[token]';
