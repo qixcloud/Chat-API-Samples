@@ -1,0 +1,24 @@
+{
+  interface IPhase {
+    phase: string,
+    title: string,
+    description: string,
+    order: number,
+    type?: string,
+  }
+
+  const jwtToken:string = '[token]';
+
+  fetch('https://api.qix.cloud/phaseMerusCase', {
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + jwtToken,
+    },
+  }).then((res) => {
+    return res.json();
+  }).then((res:IPhase[]) => {
+    
+    const phaseList:IPhase[] = res; // list of phases
+
+  })
+}
