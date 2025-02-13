@@ -6,6 +6,13 @@
     order: number,
     fileVineId: string,
     type?: string,
+    languages?: {
+      [lang: string]: {
+        phase?: string; 
+        title?: string; 
+        description?: string; 
+      }
+    }
   }
 
   const jwtToken:string = '[token]';
